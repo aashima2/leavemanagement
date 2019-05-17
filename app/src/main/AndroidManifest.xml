@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.leavemanagement">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ViewingStatus"></activity>
+        <activity
+            android:name=".AllUsersActivity"
+            android:label="AllUsersActivity" />
+        <activity
+            android:name=".ViewingLeaveApplied"
+            android:label="@string/title_activity_viewing_leave_applied"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UsersnameListing"
+            android:label="Leave Applied usersname" />
+        <activity
+            android:name=".LeaveForm"
+            android:label="LeaveForm" />
+        <activity
+            android:name=".EmployeeFunctions"
+            android:label="EmployeeFunctions" />
+        <activity
+            android:name=".AdminFunctions"
+            android:label="AdminFunctions" />
+        <activity
+            android:name=".UsersActivity"
+            android:label="UsersActivity" />
+        <activity
+            android:name=".Status"
+            android:label="Status" />
+        <activity
+            android:name=".Empleaves"
+            android:label="Leaves" />
+        <activity
+            android:name=".EmpListing"
+            android:label="DatewiseListing" />
+        <activity
+            android:name=".LeavesDetails"
+            android:label="LeaveDetails" />
+        <activity
+            android:name=".EmployeHomePage"
+            android:label="Employee Home Page" />
+        <activity
+            android:name=".Updateddata"
+            android:label="Admin Home Page" />
+        <activity
+            android:name=".listing"
+            android:label=" Data" />
+        <activity
+            android:name=".Employee_Details"
+            android:label="EmployeeDetails" />
+        <activity
+            android:name=".Detail1"
+            android:label="Details" />
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="leavemanagement"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

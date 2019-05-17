@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    tools:context=".DetailActivity">
+
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_detail" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="0.5"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txt_detail_id"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Detail_id"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_u_user_id"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="U_User_id"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/txt_Emp_name"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Emp_name"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:id="@+id/txt_Emp_Id"
+        android:text="Emp_Id" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:id="@+id/txt_Start_date"
+        android:text="StartDate" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:id="@+id/txt_End_date"
+        android:text="EndDate" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:id="@+id/txt_Reason"
+        android:text="Reason" />
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:id="@+id/et_Detail_id" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:id="@+id/et_U_User_id" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="textPersonName"
+                android:id="@+id/et_Emp_name" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:id="@+id/et_Emp_id"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:id="@+id/et_StartDate"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:id="@+id/et_EndDate"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="textMultiLine"
+                android:id="@+id/et_Reason"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:id="@+id/btn_add"
+        android:text="Add"
+        android:textSize="20sp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="150dp"
+        />
+
+
+
+</android.support.design.widget.CoordinatorLayout>
